@@ -1,0 +1,97 @@
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #222;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 32px;
+    color: white;
+    font-family: poppinsmedium;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #555;
+    border-radius: 20px;
+    background-color: #333;
+    color: white;
+    box-sizing: border-box;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 40%;
+    right: 15px;
+    cursor: pointer;
+    color: #888;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    background-color: #00ff88;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #00cc6e;
+}
+
+button[class ="back-button"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #00ff88;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[class ="back-button"]:hover {
+    background-color: #00cc6e;
+}
+
+
+.login-links {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.login-links a {
+    color: #00ff88;
+    text-decoration: none;
+}
+
+.login-links a:hover {
+    text-decoration: underline;
+}

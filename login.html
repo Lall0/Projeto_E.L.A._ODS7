@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="login.css" rel="stylesheet">
+    <title>Cadastro</title>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <img src="logo.png" alt="logo">
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="projetos.html">Serviços</a></li>
+                <li><a href="conheça.html">Sobre nós</a></li>
+                <li><a href="login2.html" id="inscreva-se-btn">Já tem uma conta?</a></li>
+            </ul>
+        </nav>        
+    </header>
+
+    <main>
+        <aside>
+            <h2><span>Inscreva-se agora</span></h2>
+            <h2>Faça parte da equipe</h2>
+            <p>
+                Aqui, somos mais do que um blog: somos uma comunidade comprometida em compartilhar experiências, aprender e inspirar práticas de energia limpa. Inscreva-se para fazer parte desse movimento e trocar ideias com quem, como você, acredita em um amanhã mais verde.
+            </p>
+            <form id="inscricaoForm">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" class="form-control" id="telefone" placeholder="Digite seu telefone" required>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Senha:</label>
+                    <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
+                </div>
+                <div class="form-group">
+                    <label for="projeto">Selecione um projeto:</label>
+                    <select class="form-control" id="projeto" required>
+                        <option value="solar">Projeto de Energia Solar na Comunidade</option>
+                        <option value="tecnologia">Desenvolvimento de Tecnologias de Armazenamento de Energia</option>
+                        <option value="educacao">Programa de Educação em Energia Renovável</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Fale um pouco sobre você:</label>
+                    <textarea class="form-control" id="mensagem" rows="3" placeholder="Compartilhe sua história e motivações" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" onclick="window.location.href='post.html';">Enviar</button>
+            </form>
+        </aside>
+
+        <article>
+            <img src="innovation-animate (2).svg" alt="homem do espaço">
+        </article>
+    </main>
+</body>
+</html>

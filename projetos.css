@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+:root {
+    --main-color: #00ff88;
+    --bg: #010103;
+    --border: 0.1rem solid rgba(114, 109, 109, 0.493);
+    --text-color: #fff;
+    --text-light: rgba(255, 255, 255, 0.8);
+    --btn-hover-color: #010103;
+    --transition: 0.2s linear;
+    font-size: 10px;
+}
+
+/* Barra de rolagem personalizada para Chrome */
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00cc6b; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    font-family: 'Noto Sans', sans-serif;
+    transition: var(--transition);
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text-color);
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--bg);
+    border-bottom: var(--border);
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+}
+
+.header .logo img {
+    height: 50px;
+}
+
+.navbar a {
+    margin: 0 2rem;
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+}
+
+.icons img {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    width: 40px;
+    height: 40px;
+}
+
+.btn {
+    background: var(--main-color);
+    color: var(--text-color);
+    padding: 1rem 3rem;
+    font-size: 1.7rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    letter-spacing: 0.1rem;
+    color: var(--btn-hover-color);
+}
+
+.page-content {
+    padding: 7rem 2rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.page-content h2,
+.page-content h3 {
+    margin-bottom: 2rem;
+    color: var(--text-color);
+}
+
+.page-content h2 {
+    font-size: 6rem; 
+}
+
+.page-content h3 {
+    font-size: 4rem;
+}
+
+.page-content p,
+.page-content ul {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: var(--text-light);
+}
+
+.page-content ul li {
+    margin-bottom: 1rem;
+}
+
+.page-content h3 span {
+    color: var(--main-color);
+}
+
+.footer {
+    background: var(--bg);
+    padding: 2rem;
+    border-top: var(--border);
+    text-align: center;
+}
+
+.footer .share img {
+    margin: 0.3rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 1rem;
+}
+
+.footer .share img:hover {
+    background-color: var(--main-color);
+}
+
+.title {
+    font-size: 4rem;
+    color: var(--main-color);
+    text-align: center;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+}
+
+.title span {
+    color: var(--text-color);
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    .header section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .navbar a {
+        margin: 0 1rem;
+        font-size: 1.6rem;
+    }
+
+    .icons img {
+        margin: 0.5rem;
+    }
+    
+    .btn {
+        padding: 0.8rem 2.5rem;
+        font-size: 1.6rem;
+    }
+
+    .page-content {
+        padding: 5rem 1.5rem 1.5rem;
+    }
+
+    .page-content h2 {
+        font-size: 5rem;
+    }
+
+    .page-content h3 {
+        font-size: 3.5rem;
+    }
+
+    .page-content p,
+    .page-content ul {
+        font-size: 1.4rem;
+    }
+    
+    .footer {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+    
+    .header .menu-toggle {
+        display: block;
+        cursor: pointer;
+        margin-left: auto;
+    }
+    
+    .icons img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .btn {
+        padding: 0.7rem 2rem;
+        font-size: 1.5rem;
+    }
+    
+    .page-content h2 {
+        font-size: 4rem;
+    }
+
+    .page-content h3 {
+        font-size: 3rem;
+    }
+    
+    .page-content p,
+    .page-content ul {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header section {
+        padding: 1rem 0.5rem;
+    }
+
+    .icons img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .btn {
+        padding: 0.5rem 1.5rem;
+        font-size: 1.3rem;
+    }
+    
+    .page-content h2 {
+        font-size: 3rem;
+    }
+
+    .page-content h3 {
+        font-size: 2.5rem;
+    }
+    
+    .page-content p,
+    .page-content ul {
+        font-size: 1rem;
+    }
+}
+

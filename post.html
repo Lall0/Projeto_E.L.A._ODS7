@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Energia Limpa</title>
+    <link rel="stylesheet" href="post.css">
+</head>
+<body>
+    <header>
+        <h1>Espaço E.L.A.</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Página Inicial</a></li>
+                <li><a href="conheça.html">Sobre Nós</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="notificationContainer"></div>
+
+    <main>
+        <!-- Seção para Criar um Novo Post -->
+        <section id="createPost">
+            <h2>Crie seu post e engaje para o bem!</h2>
+            <form id="postForm">
+                <input type="text" id="titulo" placeholder="Título" required>
+                <textarea id="conteudo" placeholder="Comente sua fonte, seu percentual eficiente... " required></textarea>
+                <input type="text" id="autor" placeholder="Autor" required>
+                <button type="submit">Postar</button>
+            </form>
+        </section>
+
+        <!-- Seção para Exibir os Posts Criados -->
+        <section id="listPosts">
+            <h2>Últimas Publicações</h2>
+            <div id="postsContainer">
+                <!-- Os posts serão adicionados dinamicamente aqui -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de confirmação para exclusão -->
+    <div id="confirmModal" class="modal hidden">
+        <div class="modal-content">
+            <p id="confirmMessage">Tem certeza que deseja excluir este post?</p>
+            <div class="modal-buttons">
+                <button id="confirmYes" class="btn green">Sim</button>
+                <button id="confirmNo" class="btn red">Cancelar</button>
+            </div>
+        </div>
+    </div>
+
+    <section id="searchPosts">
+        <h2>Selecione a fonte por título ou conteúdo</h2>
+        <input type="text" id="searchInput" placeholder="Digite o termo para buscar">
+        <button onclick="buscarPosts()">Buscar</button>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
